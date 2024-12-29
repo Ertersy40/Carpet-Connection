@@ -355,3 +355,7 @@ div#slider figure {
     margin-block: 1em;
     text-align: center;
 }
+
+.secondaryContainer {
+    background-color: white;
+}
