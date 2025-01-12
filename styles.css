@@ -337,6 +337,7 @@ div#slider figure {
 
 .mainContainer {
     margin-top: var(--nav-height);
+    margin-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -364,29 +365,38 @@ div#slider figure {
     background-color: white;
 }
 
+.card, #button-container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    padding-inline: 10vw;
+}
 
 .form-group{
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-bottom: 10px;
 }
 
+
 .card input, textarea{
     font-family: 'Louis George Cafe';
-    color: white;
-    width: 150px;
-    border: none;
+    color: black;
+    border: 1px solid black;
+    padding-block: 1em;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
-    border-bottom: 2px solid rgb(255, 255, 255);
     resize: none;
 }
 
 button {
     display: block;
     width: 100%;
-    padding: 10px;
+    max-width: fit-content;
+    padding: 10px 30px;
     margin: 10px 0;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(0, 0, 0);
     color: white;
     border: 2px solid white;
     border-radius: 5px;
@@ -394,8 +404,13 @@ button {
 }
 
 .submit-button:hover{
-    background-color: white;
-    color: black;
+    cursor: pointer;
+    align-self: center;
+    color: rgb(205, 205, 205);
+}
+
+#button-container {
+    align-items: flex-end;
 }
 
 #contact-form{
@@ -410,5 +425,4 @@ button {
     font-family: 'Louis George Cafe';
     height: 30px;
     overflow: hidden;
-    width: 150px;
 }
